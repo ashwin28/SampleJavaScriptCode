@@ -10,7 +10,7 @@
 */
 
 //creating StaffMember to hold employee and their given discount
-function StaffMember(name,discountPercent){
+function StaffMember(name,discountPercent) {
     this.name = name;
     this.discountPercent = discountPercent;
 }
@@ -19,30 +19,30 @@ function StaffMember(name,discountPercent){
 var cashRegister = {
     total:0,
     lastTransactionAmount: 0,
-    add: function(itemCost){
+    add: function(itemCost) {
         this.total += (itemCost || 0);
         this.lastTransactionAmount = itemCost;
     },
-	//creating scan and adding some default items
-    scan: function(item,quantity){
+    //creating scan and adding some default items
+    scan: function(item,quantity) {
         switch (item){
         case "eggs":
-			this.add(0.98 * quantity);
-			break;
+		this.add(0.98 * quantity);
+		break;
         case "milk":
-			this.add(1.23 * quantity);
-			break;
+		this.add(1.23 * quantity);
+		break;
         case "magazine":
-			this.add(4.99 * quantity);
-			break;
+		this.add(4.99 * quantity);
+		break;
         case "chocolate":
-			this.add(0.45 * quantity);
-			break;
+		this.add(0.45 * quantity);
+		break;
         }
         return true;
     },
-	//to delete previous transaction
-    voidLastTransaction : function(){
+    //to delete previous transaction
+    voidLastTransaction : function() {
         this.total -= this.lastTransactionAmount;
         this.lastTransactionAmount = 0;
     },
