@@ -53,9 +53,9 @@ var cashRegister = {
 };
 
 //sample run
-cashRegister.scan('eggs',1);
-cashRegister.scan('milk',1);
-cashRegister.scan('magazine',3);
+cashRegister.scan("eggs", 1);
+cashRegister.scan("milk", 1);
+cashRegister.scan("magazine", 3);
 
 var me = new StaffMember("Ashwin", 20);
 cashRegister.applyStaffDiscount(me);
