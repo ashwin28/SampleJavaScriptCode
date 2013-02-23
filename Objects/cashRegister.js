@@ -17,7 +17,7 @@ function StaffMember(name,discountPercent) {
 
 //creating the main object
 var cashRegister = {
-    total:0,
+    total: 0,
     lastTransactionAmount: 0,
     add: function(itemCost) {
         this.total += (itemCost || 0);
