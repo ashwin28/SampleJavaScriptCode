@@ -42,7 +42,7 @@ var cashRegister = {
         return true;
     },
     //to delete previous transaction
-    voidLastTransaction : function() {
+    voidLastTransaction: function() {
         this.total -= this.lastTransactionAmount;
         this.lastTransactionAmount = 0;
     },
